@@ -1,0 +1,5 @@
+﻿Data_Hora;Sessao_ID;Usuario;Nome;Perfil;EmpresaID;Evento;Tela;Detalhe;Latitude;Longitude;Precisao_Metros;Status_Localizacao;Ambiente;Versao
+23/09/2026 21:39:16;e2a82a68fe45;paulo;Paulo Marques;Diretoria;1;Login;Sistema;Usuário autenticado com sucesso;;;;;Localhost;Enterprise 2.0 — Fase 8.19 — Unidade Numeral Forçada
+23/09/2026 21:42:20;e2a82a68fe45;paulo;Paulo Marques;Diretoria;1;Navegação;📊 Dashboard Geral;Troca de tela;;;;;Localhost;Enterprise 2.0 — Fase 8.19 — Unidade Numeral Forçada
+23/09/2026 21:54:43;e2a82a68fe45;paulo;Paulo Marques;Diretoria;1;Navegação;⬆️ Subir Preço;Troca de tela;;;;;Localhost;Enterprise 2.0 — Fase 8.19 — Unidade Numeral Forçada
+23/09/2026 22:20:55;e2a82a68fe45;paulo;Paulo Marques;Diretoria;1;Navegação;⬇️ Baixar Preço;Troca de tela;;;;;Localhost;Enterprise 2.0 — Fase 8.19 — Unidade Numeral Forçada
