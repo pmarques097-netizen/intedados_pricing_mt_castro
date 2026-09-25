@@ -1,0 +1,4 @@
+V9.7.3 — Ganhos unificados.
+O total agregado de Ganho de Lucro Potencial da tela Subir Preço passa a consumir a mesma fonte executiva já usada pela tela Geral: resumo_oportunidades()['captura'].
+Isso elimina a existência de dois totais agregados diferentes para o mesmo contexto.
+As fórmulas por produto, tabela detalhada, PostgreSQL, cache, mapa e classificação não foram alterados.

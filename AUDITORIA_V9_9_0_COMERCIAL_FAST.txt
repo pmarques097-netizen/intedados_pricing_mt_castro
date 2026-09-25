@@ -1,0 +1,6 @@
+V9.9.0 — Comercial Fast Start
+Base: V9.8.0 (V9.8.1 descartada).
+Objetivo: recuperar o comportamento de inicialização das versões congeladas sem remover as funções novas.
+Ações seguras: assinatura PostgreSQL mantida na chave do snapshot; assinatura do banco mantida em memória; loader dos Parquets PostgreSQL mantido em memória; histórico de pesquisa/concorrência cacheado para evitar reler dezenas de arquivos em reruns. O snapshot analítico existente continua sendo a fonte pronta da tela quando válido.
+Nenhuma fórmula de Pricing foi modificada.
+Métricas estruturais: {"variant": "Carceres", "frozen_chars": 1308664, "current_chars": 1330981, "frozen_read": 82, "current_read": 85, "frozen_glob": 28, "current_glob": 32}

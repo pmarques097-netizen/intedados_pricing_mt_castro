@@ -1,0 +1,4 @@
+V9.8.0 — Otimização crítica da tela principal.
+AUDITORIA: desde V9.4.3, a existência de qualquer cache PostgreSQL forçava snapshot_usado_v200=False em toda execução. Isso fazia a base analítica ser reprocessada mesmo quando Venda/Estoque/Última Venda não tinham mudado.
+CORREÇÃO: a assinatura real dos arquivos data/banco_cache agora integra a chave do snapshot analítico. Se os arquivos não mudaram, a tela principal abre com a base analítica pronta. Se algum Parquet for atualizado, a assinatura muda e o motor reconstrói/publica automaticamente um novo snapshot.
+Nenhuma fórmula ou regra de Pricing foi alterada.

@@ -1,0 +1,1 @@
+Corrige contrato DataFrame do histórico e recuperação da pesquisa nas telas Mapa e Cliente x Concorrente. A comparação informa ausência de pares válidos sem confundir isso com ausência de pesquisas. Fórmulas inalteradas. Teste real pendente.

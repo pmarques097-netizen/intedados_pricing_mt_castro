@@ -1,0 +1,14 @@
+V9.4.3 — POTENCIAL APÓS ATUALIZAÇÃO DO BANCO
+
+Diagnóstico confirmado no pacote gerado pelo usuário:
+- Venda 2026-09: 25.521 registros OK
+- Venda 2026-08: 40.524 registros OK
+- Venda 2026-07: 40.484 registros OK
+- Venda 2026-06: 41.576 registros OK
+- Estoque: 96.635 registros OK
+- Última Venda: 59.804 registros OK
+
+A falha era o snapshot/cache analítico antigo prevalecendo sobre as novas fontes PostgreSQL.
+Correção: atualização do banco invalida apenas snapshots derivados e força o mesmo motor original a reprocessar.
+Também foram adicionados aliases de nomes de colunas para o formato esperado pelo motor legado.
+Nenhuma fórmula de margem, potencial, recomendação, preço ou rentabilidade foi alterada.

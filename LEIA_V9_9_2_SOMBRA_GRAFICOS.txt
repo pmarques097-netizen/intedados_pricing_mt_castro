@@ -1,0 +1,1 @@
+V9.9.2: acabamento translúcido em todos os gráficos Plotly cartesianos. Linhas com área translúcida; barras com contorno suave. Mapas, heatmaps e setores preservados. Sem alterações em dados, filtros, fórmulas ou cálculos.

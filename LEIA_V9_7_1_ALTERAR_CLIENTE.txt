@@ -1,0 +1,4 @@
+V9.7.1 — Administração: alteração de dados do cliente.
+Na aba Clientes, selecione o cliente, altere Nome, Rede Principal ou Status e clique em Salvar alterações.
+O cliente_id e seus vínculos com CNPJs/usuários são preservados.
+Nenhum cálculo, cache, PostgreSQL ou motor de Pricing foi alterado.

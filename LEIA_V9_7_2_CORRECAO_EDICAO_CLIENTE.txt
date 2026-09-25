@@ -1,0 +1,4 @@
+V9.7.2 — Corrige a edição de clientes legados.
+O cadastro existente usa ClienteID/Cliente/Cidade/UF/Status. A V9.7.1 criou colunas auxiliares duplicadas e por isso o seletor aparecia como '— — ID'.
+Agora a Administração usa diretamente ClienteID, Cliente e Status já existentes, preservando os dados e vínculos atuais.
+Nenhum cálculo do Pricing, banco PostgreSQL, cache ou mapa foi alterado.

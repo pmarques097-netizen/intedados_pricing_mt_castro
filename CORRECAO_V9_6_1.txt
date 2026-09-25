@@ -1,0 +1,5 @@
+Correção do NameError exibido no Dashboard Geral.
+Causa: o renderizador do mapa era chamado antes de sua definição no fluxo sequencial do Streamlit.
+Correção: a função do mapa foi movida para antes da chamada.
+Potencial de Captura e demais correções V9.6 foram preservados sem alteração.
+Validação: AST + py_compile; runtime visual deve ser confirmado no Streamlit.

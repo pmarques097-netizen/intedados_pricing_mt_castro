@@ -1,0 +1,5 @@
+V9.7.6 — Performance otimizada.
+Pré-agregação da Venda por EAN+mês com cache de 1 hora; telas filtram a base compacta.
+Gráfico isolado com st.fragment: alternar Valor/Quantidade não recarrega a aplicação inteira.
+Resumo pode reutilizar motor já calculado, evitando processamento duplicado quando disponível.
+Nenhuma regra de Pricing foi alterada.

@@ -1,0 +1,1 @@
+V9.9.1: sombra azul-violeta translúcida (18%) sob a linha do gráfico Evolução da Venda em Subir Preço, Baixar Preço e Negociar Compra. Mantidos layout, cores da linha, pontos, rótulos, filtros, meses em cache e cálculos. Base V9.9.0 Comercial Fast Start.

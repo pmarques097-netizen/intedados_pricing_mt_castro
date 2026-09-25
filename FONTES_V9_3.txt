@@ -1,0 +1,9 @@
+V9.3 — FONTES DO BANCO
+
+Venda: PostgreSQL, via sql/venda.sql, armazenada por competência em data/banco_cache.
+Estoque/Custo: PostgreSQL, via sql/estoque.sql, fotografia atual.
+Preço Atual/Última Venda: PostgreSQL, via sql/ultima_venda.sql, fotografia atual.
+VENDA_TESTE: permanece somente para pesquisas de concorrentes.
+VENDA_FINAL_TESTE e ESTOQUE_TESTE: não são fontes operacionais nesta versão.
+
+Após atualizar pelo menu Banco de dados / Atualização, o aplicativo recarrega automaticamente.

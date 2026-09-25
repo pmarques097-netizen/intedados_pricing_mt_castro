@@ -1,0 +1,4 @@
+V9.4.1
+A conexão PostgreSQL usa exclusivamente Host/Porta/Banco/Usuário/Senha/SSL informados na tela.
+O botão Testar confirma current_user e current_database retornados pelo servidor.
+Nenhuma fórmula ou regra do Pricing foi alterada.

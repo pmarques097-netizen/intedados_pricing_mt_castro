@@ -1,0 +1,7 @@
+V9.7 — Administração reestruturada — Carceres
+Base: V9.6.1 estável.
+Área exclusiva do login paulo.
+Fluxo: Cliente > CNPJs/Lojas > Usuários > Permissões > Auditoria.
+Inclui cadastro, múltiplos CNPJs, importação Excel/CSV, usuários e diagnóstico.
+Compatibilidade com os CSVs legados preservada.
+Nenhum cálculo, PostgreSQL, cache, mapa ou motor de Pricing foi alterado.

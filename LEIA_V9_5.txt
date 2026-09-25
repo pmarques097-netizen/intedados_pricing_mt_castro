@@ -1,0 +1,1 @@
+Banco/Atualização visível somente ao login paulo. Configuração pode ser salva. Senha local protegida pelo Windows DPAPI; não é gravada em texto aberto. Nenhuma fórmula do Pricing foi alterada.

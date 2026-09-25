@@ -1,0 +1,7 @@
+V9.4 — TROCA DE FONTE SEM ALTERAR CÁLCULOS
+
+1. VENDA: consulta mensal direta no PostgreSQL. Nenhuma média/regra é recalculada na camada de banco.
+2. ESTOQUE/CUSTO: PostgreSQL, no máximo uma atualização automática por dia; opção de forçar disponível.
+3. ÚLTIMA VENDA: PostgreSQL.
+4. As fórmulas, recomendações, margens, potenciais e demais cálculos do Pricing permanecem no motor existente.
+5. As pastas antigas não são fallback operacional para Venda/Estoque/Custo/Última Venda.

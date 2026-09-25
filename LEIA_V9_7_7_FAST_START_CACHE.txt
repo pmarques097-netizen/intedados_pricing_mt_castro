@@ -1,0 +1,2 @@
+V9.7.7 — Fast Start usando o cache já existente.
+A função que carrega Venda/Estoque dos Parquets PostgreSQL existentes passa a usar st.cache_resource. Assim, os DataFrames são carregados uma vez para a memória e reutilizados nas chamadas duplicadas da abertura e nos reruns/trocas de tela. Não há nova consulta ao PostgreSQL por causa desta otimização; a rotina/botão de atualização continua responsável por renovar os arquivos de cache e já limpa os caches quando necessário. Nenhuma regra ou cálculo do Pricing foi alterado.

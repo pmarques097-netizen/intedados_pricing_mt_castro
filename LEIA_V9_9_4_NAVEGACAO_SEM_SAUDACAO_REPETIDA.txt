@@ -1,0 +1,1 @@
+V9.9.4: saudação exibida uma vez após autenticação e não reconstruída nas trocas de tela. Flag removida no logout. Base V9.9.3 preservada. Nenhum cálculo ou fonte alterado. Validação estática AST/py_compile; executar no Streamlit para validar comportamento.

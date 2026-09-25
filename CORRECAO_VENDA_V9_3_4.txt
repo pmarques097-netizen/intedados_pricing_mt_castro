@@ -1,0 +1,7 @@
+Correção Venda V9.3.4
+
+Erro identificado no histórico: PostgreSQL rejeitou RANGE BETWEEN INTERVAL '90 DAYS' PRECEDING.
+Correção: o SQL não usa mais RANGE INTERVAL.
+A extração busca a competência + 89 dias anteriores e calcula media_venda_dia/media_venda_mes em pandas.
+Depois salva somente as vendas da competência escolhida.
+Estoque e Última Venda permanecem inalterados e vindos do PostgreSQL.

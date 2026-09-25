@@ -1,0 +1,1 @@
+V9.9.3: remove somente leituras/classificações de VENDA_FINAL_TESTE e ESTOQUE_TESTE que eram imediatamente descartadas pelo PostgreSQL; impede buscas recursivas dessas fontes operacionais. Mantém COMPRA_TESTE e VENDA_TESTE, fórmulas e telas. Cronometria em session_state["_pricing_v993_perf_inicio"]. Teste real de Streamlit necessário.

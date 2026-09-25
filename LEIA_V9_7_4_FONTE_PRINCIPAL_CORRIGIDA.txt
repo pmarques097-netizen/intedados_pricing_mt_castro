@@ -1,0 +1,5 @@
+V9.7.4 — Fonte Principal / Fonte Preço Atual corrigida.
+Após a migração operacional para PostgreSQL, a fonte principal do Preço Atual não pode mais ser exibida como ARQUIVO DIÁRIO/VENDA_TESTE.
+Regra preservada: selecionar cronologicamente a última venda válida do EAN nas lojas Principal e calcular Preço Atual = valor_total / quantidade. preco_tabela não é usado como Preço Atual; ultimo_preco_vendido permanece fallback somente quando total/quantidade forem ausentes ou inválidos.
+VENDA_TESTE permanece para pesquisa de concorrentes/mapa, não como fonte operacional principal do Preço Atual.
+Nenhuma fórmula financeira foi alterada nesta versão; a correção é de identificação e rastreabilidade da fonte operacional.

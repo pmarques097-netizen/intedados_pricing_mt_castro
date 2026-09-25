@@ -1,0 +1,9 @@
+Carceres V9_0_BANCO_KPI
+
+Nova linha de banco criada sem alterar a versão oficial congelada.
+Tela Banco de dados / Atualização com abas: Conexão, Scripts SQL, Atualização mensal e Histórico.
+Scripts incluídos: ultima_venda.sql, estoque.sql, venda.sql.
+Venda: atualização por uma ou várias competências, preservando meses cacheados.
+Estoque e Última Venda: fotografia atual.
+Falhas não substituem o cache anterior (gravação temporária + replace).
+Senha não é persistida em database.json.

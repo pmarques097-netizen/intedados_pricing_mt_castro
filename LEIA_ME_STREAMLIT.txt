@@ -1,0 +1,28 @@
+EIROX PRICING - PUBLICACAO STREAMLIT COMMUNITY CLOUD
+
+Arquivo principal:
+  dashboard_pricing.py
+
+Arquivos obrigatorios na raiz do repositorio:
+  dashboard_pricing.py
+  pricing_utils.py
+  performance_engine.py
+  requirements.txt
+  runtime.txt
+  style.css
+  logo eirox.png
+
+Pasta de configuracao:
+  .streamlit/config.toml
+
+Pastas de dados:
+  VENDA_TESTE/
+  VENDA_FINAL_TESTE/
+  COMPRA_TESTE/
+  ESTOQUE_TESTE/
+
+IMPORTANTE:
+- requirements.txt precisa ficar na MESMA pasta de dashboard_pricing.py.
+- Nao envie somente dashboard_pricing.py ao GitHub.
+- Depois do commit, reinicie/reboot o app no Streamlit para forcar nova instalacao das dependencias.
+- O erro "No module named plotly" indica que requirements.txt nao foi encontrado/processado.

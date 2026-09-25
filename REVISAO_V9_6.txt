@@ -1,0 +1,7 @@
+V9.6 — Revisão geral baseada na V9.5.1 estável.
+1. Dashboard Geral, Índice e Dashboard Executivo usam o mesmo resumo da tela Geral.
+2. Não foi criada fórmula nova: foi eliminada a duplicidade de fontes de resumo.
+3. Mapa do Dashboard Geral carrega diretamente VENDA_TESTE e é exibido após os KPIs.
+4. PostgreSQL/cache, permissões do banco e fórmulas centrais foram preservados.
+5. Foi incluída auditoria de consistência visível apenas ao login paulo.
+Validação realizada: AST + py_compile. Teste visual/runtime deve ser feito no Streamlit local.

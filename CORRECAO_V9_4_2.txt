@@ -1,0 +1,6 @@
+V9.4.2 — DRIVER POSTGRESQL
+
+Corrigido: name 'psycopg2' is not defined.
+pricing_database.py agora importa psycopg2 explicitamente.
+requirements.txt inclui psycopg2-binary para execução local e Streamlit.
+Nenhuma fórmula, regra ou cálculo do Pricing foi alterado.

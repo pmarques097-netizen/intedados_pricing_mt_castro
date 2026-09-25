@@ -1,0 +1,6 @@
+V9.7.5 — Gráfico de linha de Venda Mês a Mês.
+Incluído nas telas Subir Preço, Baixar Preço e Negociar Compra.
+REGRA: o conjunto de EANs do gráfico é exatamente o conjunto de produtos da sugestão exibida na página após os filtros atuais. A série mensal é somada a partir do histórico Venda do PostgreSQL/cache mensal.
+O usuário pode alternar Valor (R$) e Quantidade.
+O gráfico fica entre a Regra de Decisão e a Lista Priorizada.
+Nenhuma fórmula de Pricing, recomendação, ganho, custo, preço ou classificação foi alterada.
