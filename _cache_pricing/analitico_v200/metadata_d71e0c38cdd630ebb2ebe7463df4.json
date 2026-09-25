@@ -1,0 +1,12 @@
+{
+  "versao_arquitetura": "Eirox Pricing 2.0 — Fase 1",
+  "gerado_em": "23/09/2026 21:42:15",
+  "linhas": 1597,
+  "colunas": 88,
+  "formato": "PARQUET",
+  "assinatura_master": "bbca5b51843d26182e215ebef77b770d6a99f4dc101b28d838b9e05410c76f87",
+  "assinatura_historico": "4e9c559102b69ae59fede9a33ec19cf3b74694fb68b6d95da18e47b28caade1a",
+  "assinatura_venda": "POSTGRESQL_VENDA",
+  "assinatura_estoque": "POSTGRESQL_ESTOQUE",
+  "assinatura_compra": "7f2b13d6a9db548618e98640ade6be369c215b411ce5a9c5a5dde4ded4f9a213"
+}
