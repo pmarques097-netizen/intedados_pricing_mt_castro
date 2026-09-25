@@ -1,4 +1,4 @@
-EIROX PRICING - PUBLICACAO STREAMLIT COMMUNITY CLOUD
+INTEDADOS PRICING - PUBLICACAO STREAMLIT COMMUNITY CLOUD
 
 Arquivo principal:
   dashboard_pricing.py
@@ -10,7 +10,7 @@ Arquivos obrigatorios na raiz do repositorio:
   requirements.txt
   runtime.txt
   style.css
-  logo eirox.png
+  logo intedados.png
 
 Pasta de configuracao:
   .streamlit/config.toml

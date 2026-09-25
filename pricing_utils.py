@@ -1,5 +1,5 @@
 """
-Camada de compatibilidade do Eirox Pricing.
+Camada de compatibilidade do Intedados Pricing.
 
 O dashboard continua importando as mesmas funções de pricing_utils,
 mas toda a leitura e o cache ficam isolados em performance_engine.py.

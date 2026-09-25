@@ -1,4 +1,4 @@
-EIROX PRICING ENTERPRISE — MONITORAMENTO DE ACESSOS v1.4.42
+INTEDADOS PRICING ENTERPRISE — MONITORAMENTO DE ACESSOS v1.4.42
 
 O sistema registra automaticamente:
 - Login com data/hora, usuário, nome, perfil, empresa e ID de sessão.
@@ -9,7 +9,7 @@ O sistema registra automaticamente:
 
 ONDE CONSULTAR
 1. Entrar com um usuário Master.
-2. Menu Administração Eirox > Central de Auditoria.
+2. Menu Administração Intedados > Central de Auditoria.
 3. Usar filtros por usuário, evento, tela e data.
 4. Exportar em CSV ou Excel.
 

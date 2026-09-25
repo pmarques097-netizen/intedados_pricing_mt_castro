@@ -2,4 +2,5 @@ V9.3.2 CORRIGIDO
 1. Corrigido AttributeError em historico.empty na Curva ABC.
 2. Histórico normalizado para pandas DataFrame antes das telas.
 3. Curva ABC agora informa corretamente que vendas vêm do PostgreSQL.
+4. Logo oficial Intedados aplicada fisicamente ao arquivo logo intedados.png.
 Validação: AST + py_compile OK.

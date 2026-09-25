@@ -1,5 +1,5 @@
 
-/* EIROX CSS LIMPO */
+/* INTEDADOS CSS LIMPO */
 
 html, body, [data-testid="stAppViewContainer"] {
     background: radial-gradient(circle at top left, rgba(44,160,255,0.15), transparent 32%),
@@ -100,7 +100,7 @@ div[data-testid="stDataFrame"] {
     overflow: hidden !important;
 }
 
-.eirox-card {
+.intedados-card {
     background: linear-gradient(135deg, rgba(15,39,71,.96), rgba(8,20,38,.94));
     border: 1px solid rgba(120,180,255,.17);
     border-radius: 18px;
@@ -108,7 +108,7 @@ div[data-testid="stDataFrame"] {
     margin-bottom: 16px;
 }
 
-.eirox-section-title {
+.intedados-section-title {
     font-size: 13px;
     color: #9FD0FF;
     text-transform: uppercase;
@@ -117,7 +117,7 @@ div[data-testid="stDataFrame"] {
     margin-bottom: 8px;
 }
 
-.eirox-hero {
+.intedados-hero {
     background: linear-gradient(135deg, rgba(15,39,71,.96), rgba(7,17,31,.96));
     border: 1px solid rgba(120,180,255,.18);
     border-radius: 22px;
@@ -131,17 +131,17 @@ div[data-testid="stDataFrame"] {
 
 
 /* =========================================================
-   EIROX PRICING ENTERPRISE - VISUAL PREMIUM V1
+   INTEDADOS PRICING ENTERPRISE - VISUAL PREMIUM V1
    ========================================================= */
 
 :root {
-    --eirox-bg: #050B14;
-    --eirox-text: #F6FAFF;
-    --eirox-muted: #BFD7FF;
-    --eirox-blue: #2CA0FF;
-    --eirox-green: #2ED47A;
-    --eirox-yellow: #FFB946;
-    --eirox-red: #FF5C7A;
+    --intedados-bg: #050B14;
+    --intedados-text: #F6FAFF;
+    --intedados-muted: #BFD7FF;
+    --intedados-blue: #2CA0FF;
+    --intedados-green: #2ED47A;
+    --intedados-yellow: #FFB946;
+    --intedados-red: #FF5C7A;
 }
 
 html, body, [data-testid="stAppViewContainer"] {
@@ -149,7 +149,7 @@ html, body, [data-testid="stAppViewContainer"] {
         radial-gradient(circle at top left, rgba(44,160,255,.18), transparent 28%),
         radial-gradient(circle at top right, rgba(46,212,122,.10), transparent 24%),
         linear-gradient(135deg, #050B14 0%, #07111F 46%, #0A1C34 100%) !important;
-    color: var(--eirox-text) !important;
+    color: var(--intedados-text) !important;
 }
 
 [data-testid="stHeader"] {
@@ -305,7 +305,7 @@ div[data-testid="stDataFrame"] {
     border-radius: 18px !important;
 }
 
-.eirox-hero-premium {
+.intedados-hero-premium {
     background:
         radial-gradient(circle at top right, rgba(44,160,255,.26), transparent 27%),
         linear-gradient(135deg, rgba(15,39,71,.98), rgba(7,17,31,.97));
@@ -318,7 +318,7 @@ div[data-testid="stDataFrame"] {
     overflow: hidden;
 }
 
-.eirox-hero-premium::before {
+.intedados-hero-premium::before {
     content: "";
     position: absolute;
     top: 0;
@@ -328,7 +328,7 @@ div[data-testid="stDataFrame"] {
     background: linear-gradient(90deg, #2CA0FF, #2ED47A, #FFB946);
 }
 
-.eirox-hero-kicker {
+.intedados-hero-kicker {
     color: #9FD0FF;
     font-size: 12px;
     font-weight: 900;
@@ -337,7 +337,7 @@ div[data-testid="stDataFrame"] {
     margin-bottom: 6px;
 }
 
-.eirox-hero-title {
+.intedados-hero-title {
     color: #FFFFFF;
     font-size: 31px;
     line-height: 1.08;
@@ -346,20 +346,20 @@ div[data-testid="stDataFrame"] {
     margin: 0;
 }
 
-.eirox-hero-subtitle {
+.intedados-hero-subtitle {
     color: #BFD7FF;
     font-size: 14px;
     margin-top: 8px;
 }
 
-.eirox-badge-row {
+.intedados-badge-row {
     display: flex;
     flex-wrap: wrap;
     gap: 9px;
     margin-top: 14px;
 }
 
-.eirox-badge {
+.intedados-badge {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -372,14 +372,14 @@ div[data-testid="stDataFrame"] {
     font-weight: 800;
 }
 
-.eirox-alert-grid {
+.intedados-alert-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
     margin-bottom: 18px;
 }
 
-.eirox-alert-card {
+.intedados-alert-card {
     border-radius: 18px;
     padding: 15px 16px;
     border: 1px solid rgba(120,180,255,.17);
@@ -387,30 +387,30 @@ div[data-testid="stDataFrame"] {
     box-shadow: 0 12px 28px rgba(0,0,0,.22);
 }
 
-.eirox-alert-title {
+.intedados-alert-title {
     color: #FFFFFF;
     font-weight: 900;
     font-size: 14px;
     margin-bottom: 4px;
 }
 
-.eirox-alert-value {
+.intedados-alert-value {
     color: #FFFFFF;
     font-weight: 950;
     font-size: 24px;
     letter-spacing: -.02em;
 }
 
-.eirox-alert-caption {
+.intedados-alert-caption {
     color: #BFD7FF;
     font-size: 12px;
     margin-top: 3px;
 }
 
-.eirox-alert-red { border-color: rgba(255,92,122,.36); }
-.eirox-alert-yellow { border-color: rgba(255,185,70,.36); }
-.eirox-alert-green { border-color: rgba(46,212,122,.34); }
+.intedados-alert-red { border-color: rgba(255,92,122,.36); }
+.intedados-alert-yellow { border-color: rgba(255,185,70,.36); }
+.intedados-alert-green { border-color: rgba(46,212,122,.34); }
 
 @media (max-width: 1000px) {
-    .eirox-alert-grid { grid-template-columns: 1fr; }
+    .intedados-alert-grid { grid-template-columns: 1fr; }
 }

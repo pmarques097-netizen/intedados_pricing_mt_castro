@@ -1,7 +1,8 @@
-V9.7 — Administração reestruturada — Carceres
+V9.7 — Administração reestruturada (primeira implantação: Intedados)
 Base: V9.6.1 estável.
 Área exclusiva do login paulo.
-Fluxo: Cliente > CNPJs/Lojas > Usuários > Permissões > Auditoria.
-Inclui cadastro, múltiplos CNPJs, importação Excel/CSV, usuários e diagnóstico.
-Compatibilidade com os CSVs legados preservada.
-Nenhum cálculo, PostgreSQL, cache, mapa ou motor de Pricing foi alterado.
+Fluxo central: Cliente > CNPJs/Lojas > Usuários > Permissões > Auditoria.
+Inclui cadastro de cliente, múltiplos CNPJs, importação Excel/CSV, vínculo de usuários e diagnóstico.
+Os CSVs legados continuam sendo usados para preservar compatibilidade.
+Nenhum cálculo, fonte PostgreSQL, cache ou motor de Pricing foi alterado.
+Validação técnica: AST + py_compile. A validação funcional deve ser feita no Streamlit local antes de replicar para IntedadosMNP/Cáceres.

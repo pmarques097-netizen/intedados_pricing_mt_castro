@@ -1,4 +1,4 @@
-Carceres V9_0_BANCO_KPI
+Intedados V9_0_BANCO_KPI
 
 Nova linha de banco criada sem alterar a versão oficial congelada.
 Tela Banco de dados / Atualização com abas: Conexão, Scripts SQL, Atualização mensal e Histórico.

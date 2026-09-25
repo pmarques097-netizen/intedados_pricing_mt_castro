@@ -1,8 +1,8 @@
-Carceres — V8_28_2_BOAS_VINDAS
+Intedados — V8_28_2_BOAS_VINDAS
 
 Após o login:
 Olá, <nome do usuário>! 👋
-Bem-vindo à nossa ferramenta de Pricing da Eirox.
+Bem-vindo à nossa ferramenta de Pricing da Intedados.
 
 Somente a saudação foi adicionada. Layout, menu, cores, bases e regras comerciais foram preservados.
 Validação técnica: AST + py_compile.
