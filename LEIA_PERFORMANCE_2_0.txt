@@ -1,0 +1,20 @@
+INTEDADOS PRICING — PERFORMANCE 2.0
+
+Objetivo: reduzir o tempo de abertura e principalmente a transição entre telas, preservando regras, fórmulas e layout.
+
+Otimizações aplicadas:
+1. Assinatura dos Parquets PostgreSQL com cache curtíssimo de 2 segundos, evitando varredura repetida em cliques sucessivos.
+2. Limpeza/manutenção do cache persistente executada uma única vez por processo, e não em todo rerun.
+3. Mapa EAN -> descrição cacheado pela assinatura da base mestre.
+4. Gravação do log de navegação movida para thread em segundo plano, evitando bloquear a abertura da próxima tela.
+5. Mantidos os caches já existentes: snapshot analítico, DataFrames PostgreSQL em memória, filtros, enriquecimentos e agregações.
+
+SEGURANÇA FUNCIONAL
+- Nenhuma fórmula comercial foi alterada.
+- Nenhuma regra de recomendação foi alterada.
+- Nenhuma fonte de dados foi removida.
+- A atualização dos Parquets continua invalidando o motor; a assinatura pode levar até ~2 s para refletir uma alteração recém-gravada.
+
+VALIDAÇÃO TÉCNICA
+- Executar localmente e comparar tempos de _pricing_v997_diagnostico_abertura antes/depois.
+- Validar Dashboard Geral, Geral, Subir Preço, Baixar Preço e Negociar Compra.

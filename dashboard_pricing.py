@@ -33510,7 +33510,7 @@ if _intedados_visao_dashboard_v160 == "🤖 Índice Intedados Calculado":
             background:
                 radial-gradient(circle at 92% 18%, rgba(174,88,255,.16), transparent 32%),
                 linear-gradient(135deg,#151b3f 0%,#0c1f39 100%);
-            box-shadow:0 12px 28px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.025); transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+            box-shadow:0 8px 22px rgba(0,0,0,.16);
         ">
             <div style="font-size:12px;font-weight:800;letter-spacing:.12em;color:#bda8ff;text-transform:uppercase;">
                 Índice Executivo Intedados
@@ -33714,26 +33714,19 @@ except Exception:
 st.markdown(
     """
     <style>
-    /* Dashboard Geral — INTEDADOS UI 2.0 / camada visual executiva */
+    /* Dashboard Geral — camada visual local V1.4.22 */
     .intedados-dash-hero-v1420 {
         position: relative;
         overflow: hidden;
         border: 1px solid rgba(70, 140, 205, .26);
-        border-radius: 20px;
-        padding: 27px 30px 25px 30px;
-        min-height: 150px;
+        border-radius: 22px;
+        padding: 24px 26px 22px 26px;
         margin: 2px 0 18px 0;
         background:
-            radial-gradient(circle at 91% 12%, rgba(24, 198, 255, .18), transparent 27%),
-            radial-gradient(circle at 68% 105%, rgba(116, 82, 255, .19), transparent 35%),
-            linear-gradient(115deg, rgba(10, 38, 75, .99), rgba(13, 27, 72, .98) 58%, rgba(7, 31, 52, .99));
-        box-shadow: 0 20px 50px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.035);
-    }
-    .intedados-dash-hero-v1420::after {
-        content: ""; position:absolute; right:28px; bottom:22px; width:260px; height:86px;
-        opacity:.55; pointer-events:none;
-        background:linear-gradient(135deg,transparent 0 12%,rgba(29,125,255,.18) 12% 14%,transparent 14% 28%,rgba(34,195,255,.28) 28% 31%,transparent 31% 47%,rgba(74,91,255,.25) 47% 50%,transparent 50%);
-        border-bottom:2px solid rgba(39,198,255,.32); filter:drop-shadow(0 0 16px rgba(34,179,255,.18));
+            radial-gradient(circle at 92% 12%, rgba(21, 203, 232, .12), transparent 32%),
+            radial-gradient(circle at 68% 105%, rgba(116, 82, 255, .12), transparent 34%),
+            linear-gradient(135deg, rgba(12, 34, 58, .98), rgba(6, 19, 34, .98));
+        box-shadow: 0 18px 44px rgba(0,0,0,.20), inset 0 1px 0 rgba(255,255,255,.025);
     }
     .intedados-dash-hero-v1420::before {
         content: "";
@@ -33774,11 +33767,10 @@ st.markdown(
         display: inline-flex;
         align-items: center;
         gap: 7px;
-        padding: 9px 12px;
-        border-radius: 11px;
+        padding: 8px 11px;
+        border-radius: 10px;
         border: 1px solid rgba(110, 159, 201, .18);
-        background: rgba(4, 16, 30, .66);
-        box-shadow: inset 0 1px 0 rgba(255,255,255,.025);
+        background: rgba(4, 16, 30, .55);
         color: #d9e8f6;
         font-size: .78rem;
         font-weight: 700;
@@ -33868,9 +33860,24 @@ st.markdown(
 
     /* Reduce blank gaps in the presentation page */
     .block-container {
-        padding-top: 1.35rem !important;
+        padding-top: 1.15rem !important;
         padding-bottom: 2.2rem !important;
+        max-width: 1680px !important;
     }
+
+    /* UI 2.1 — acabamento executivo, mantido dentro do bloco CSS */
+    [data-testid="stAppViewContainer"] {
+        background: radial-gradient(circle at 86% 4%, rgba(15,126,189,.10), transparent 24%), linear-gradient(180deg,#061321 0%,#071827 48%,#06111d 100%) !important;
+    }
+    [data-testid="stSidebar"] { background: linear-gradient(180deg,#0a3158 0%,#0a2441 32%,#071a2f 100%) !important; border-right:1px solid rgba(92,164,224,.18); }
+    [data-testid="stSidebar"] button { border-radius:12px !important; transition:transform .15s ease,border-color .15s ease,background .15s ease !important; }
+    [data-testid="stSidebar"] button:hover { transform:translateX(2px); border-color:rgba(38,180,255,.50) !important; }
+    .intedados-dash-hero-v1420 { min-height:190px; display:flex; flex-direction:column; justify-content:center; background:linear-gradient(90deg,rgba(11,42,92,.98) 0%,rgba(23,27,103,.95) 52%,rgba(5,61,92,.95) 100%) !important; }
+    .intedados-dash-hero-v1420::after { content:"↗"; position:absolute; right:42px; top:26px; font-size:112px; line-height:1; font-weight:900; color:rgba(31,190,255,.13); transform:rotate(-6deg); text-shadow:0 0 34px rgba(39,176,255,.18); }
+    .intedados-dash-title-v1420 { font-size:clamp(1.8rem,2.6vw,2.75rem) !important; }
+    .intedados-dash-badge-v1420 { backdrop-filter:blur(8px); background:rgba(2,14,29,.62) !important; border-color:rgba(86,165,226,.24) !important; }
+    .intedados-kpi-v1434 { transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease; }
+    .intedados-kpi-v1434:hover { transform:translateY(-2px); border-color:rgba(42,178,255,.55); box-shadow:0 16px 34px rgba(0,0,0,.22); }
     </style>
     """,
     unsafe_allow_html=True,
@@ -33882,7 +33889,7 @@ st.markdown(
       <div class="intedados-dash-eyebrow-v1420">Intedados Pricing Enterprise · Visão Executiva</div>
       <h1 class="intedados-dash-title-v1420">📊 Inteligência de Pricing &amp; Competitividade</h1>
       <div class="intedados-dash-sub-v1420">
-        Dashboard executivo para transformar pesquisa de mercado em decisões de preço, margem e oportunidade.
+        Monitoramento executivo de preços, concorrência, margem, alertas e oportunidades comerciais.
       </div>
       <div class="intedados-dash-badges-v1420">
         <span class="intedados-dash-badge-v1420">🏪 Rede Principal&nbsp; <b>{_intedados_rede_dash}</b></span>
@@ -33965,15 +33972,14 @@ st.markdown(
     <style>
     .intedados-kpi-grid-v1434 {{
         display:grid; grid-template-columns:repeat(8,minmax(0,1fr));
-        gap:12px; margin:6px 0 18px 0; align-items:stretch;
+        gap:14px; margin:4px 0 14px 0; align-items:stretch;
     }}
     .intedados-kpi-v1434 {{
-        min-height:126px; border:1px solid rgba(55,122,180,.34); border-radius:16px;
+        min-height:132px; border:1px solid #21445f; border-radius:18px;
         background:linear-gradient(145deg,#0d2742 0%,#0a1d34 100%);
         padding:17px 18px 15px; position:relative; overflow:hidden;
-        box-shadow:0 12px 28px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.025); transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+        box-shadow:0 8px 22px rgba(0,0,0,.16);
     }}
-    .intedados-kpi-v1434:hover {transform:translateY(-2px);border-color:rgba(42,178,255,.55);box-shadow:0 16px 34px rgba(0,0,0,.22);}
     .intedados-kpi-v1434:before {{
         content:''; position:absolute; left:0; top:0; right:0; height:3px;
         background:linear-gradient(90deg,#20b8ff,#2ed6bd); opacity:.95;
