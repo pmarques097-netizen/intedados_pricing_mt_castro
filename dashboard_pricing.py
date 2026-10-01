@@ -412,8 +412,14 @@ def intedados_v146_ultimo_mes_fechado():
 # Estoque, Venda e Última Venda deixam de usar as pastas locais.
 # VENDA_TESTE permanece somente para pesquisa de concorrentes.
 # ==========================================================
+@st.cache_data(ttl=2, show_spinner=False, max_entries=2)
 def _pricing_v943_assinatura_banco():
-    """Assinatura das fontes PostgreSQL para invalidar somente caches antigos do motor."""
+    """Assinatura leve das fontes PostgreSQL.
+
+    PERFORMANCE 2.0: durante navegação rápida entre telas, evita repetir a
+    varredura do diretório de Parquets em cada rerun. O TTL curto (2 s) mantém
+    a invalidação praticamente imediata quando o atualizador troca os arquivos.
+    """
     _cache = Path(__file__).resolve().parent / "data" / "banco_cache"
     _partes = []
     for _p in sorted(_cache.glob("*.parquet")):
@@ -16955,7 +16961,17 @@ def intedados_limpar_cache_persistente_antigo(limite=24):
         pass
 
 
-intedados_limpar_cache_persistente_antigo()
+@st.cache_resource(show_spinner=False)
+def _intedados_perf20_limpeza_cache_inicial():
+    """Executa manutenção de cache uma única vez por processo.
+
+    Antes, a listagem/ordenação do diretório de cache ocorria em todo rerun,
+    inclusive em cada clique de navegação.
+    """
+    intedados_limpar_cache_persistente_antigo()
+    return True
+
+_intedados_perf20_limpeza_cache_inicial()
 
 # --------------------------------------------------
 # CACHE PERSISTENTE DE ENTRADA - V1.4.36
@@ -18693,6 +18709,10 @@ def intedados_v200_publicar_snapshot_atual(base):
         return False
 
 
+# PERFORMANCE 2.0 — transição rápida entre telas.
+# Otimizações conservadoras: nenhuma fórmula/regra de Pricing é alterada.
+INTEDADOS_PERFORMANCE_20 = True
+
 # V9.9.3 — cronômetro de carregamento (sem dados pessoais/credenciais).
 import time as _pricing_perf_time_v993
 _pricing_perf_t0_v993 = _pricing_perf_time_v993.perf_counter()
@@ -19074,11 +19094,15 @@ if "EAN" in df.columns and "Produto" in df.columns:
         .str.strip()
     )
 
-    descricao_padrao = (
-        df.groupby("EAN")["Produto"]
-        .agg(lambda x: x.mode().iloc[0] if not x.mode().empty else x.iloc[0])
-        .to_dict()
-    )
+    @st.cache_resource(show_spinner=False, max_entries=12)
+    def _intedados_perf20_descricao_padrao(assinatura_master, _base):
+        return (
+            _base.groupby("EAN")["Produto"]
+            .agg(lambda x: x.mode().iloc[0] if not x.mode().empty else x.iloc[0])
+            .to_dict()
+        )
+
+    descricao_padrao = _intedados_perf20_descricao_padrao(_intedados_sig_master, df)
 
     df["Descricao_Unica"] = (
         df["EAN"].astype(str)
@@ -21064,7 +21088,17 @@ except Exception:
 registrar_pagina_acessada(pagina)
 
 if st.session_state.get("ultima_pagina_logada") != pagina:
-    salvar_log_acesso("Navegação", pagina, "Troca de tela")
+    # PERFORMANCE 2.0: auditoria em disco não bloqueia a renderização da nova tela.
+    _pagina_log_perf20 = str(pagina)
+    def _salvar_nav_perf20():
+        try:
+            salvar_log_acesso("Navegação", _pagina_log_perf20, "Troca de tela")
+        except Exception:
+            pass
+    try:
+        threading.Thread(target=_salvar_nav_perf20, daemon=True).start()
+    except Exception:
+        salvar_log_acesso("Navegação", _pagina_log_perf20, "Troca de tela")
     registrar_alerta_navegacao_async(pagina)
     st.session_state["ultima_pagina_logada"] = pagina
 # enviar_alerta_localizacao_capturada()  # desativado para melhorar velocidade entre telas
